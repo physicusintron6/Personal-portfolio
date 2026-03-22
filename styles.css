@@ -1,10 +1,15 @@
  html{
         scroll-behavior: smooth;
       }
+* {
+ margin:0;
+ padding: 0;
+ box-sizing: border-box;
       body{
         margin:0;
         font-family: arial,sans-serif;
         background-color: #f4f4f4;
+       line-height: 1.6;
       }
 
 
@@ -76,6 +81,10 @@
     height: auto;
     text-align: center;
   }
+ .sidebars ul{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
   .sidebars h2 {
     margin-bottom: 10px;
@@ -92,7 +101,7 @@
 
   .content {
     margin-left: 0;
-    padding: 15px;
+  
   }
 
   .header {
@@ -110,13 +119,26 @@
   section {
     padding: 15px;
   }
+  .img {
+   max-width: 100%;
+   height: auto;
+  }
+    .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
 }
-                  .sidebars {
+        .sidebars {
           position: fixed;
-          width: 220px;
+          width: 200px;
           height: 100%;
-          background-color: #0d8f12;
-          padding-top: 20px;
+          background: #333
+          padding: 20px;
           color: white;
         } 
         .sidebars h2 {
@@ -134,8 +156,8 @@
           color: white;
           text-decoration: none;
           display: block;
-          padding: 10px;
-          transition: 0.3s;
+          padding: 10px 0;
+          
         }
         .sidebars ul li a:hover {
           background-color: #111;
